@@ -1,0 +1,11 @@
+*.pyc
+var/
+*.sqlite3
+.idea
+venv
+
+local_settings.py
+todo_database
+
+# env
+.env
