@@ -9,6 +9,8 @@ class ToDoViewSet(ModelViewSet):
     queryset = ToDo.objects.all()
     serializer_class = ToDoSerializer
     list_serializer_class = ToDoListSerializer
+    search_fields = ('title',)
+    filterset_fields = ('done',)
 
     def get_serializer_class(self):
         if self.action == 'list':
